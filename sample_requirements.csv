@@ -1,0 +1,11 @@
+id,requirement
+R001,The system shall allow a registered user to reset a password using a verified email address.
+R002,The application should load quickly and show appropriate results.
+R003,The payment service shall return a confirmation within 3 seconds after a successful card payment.
+R004,The system shall disable a user account after 5 failed login attempts within 10 minutes.
+R005,The system shall allow users to upload profile images up to 5 MB in PNG or JPEG format.
+R006,The application may store logs when necessary.
+R007,The session shall expire after 5 minutes of inactivity.
+R008,The session shall not expire before 30 minutes of inactivity.
+R009,A registered user shall be able to recover the account password using the verified email address.
+R010,Administrators shall receive an alert within 60 seconds when a monitored service becomes unavailable.

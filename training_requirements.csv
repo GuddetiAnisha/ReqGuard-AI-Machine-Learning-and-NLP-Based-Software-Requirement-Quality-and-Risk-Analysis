@@ -1,0 +1,151 @@
+requirement,risk,quality_score
+The system shall display the dashboard within 15 seconds after a password reset request.,LOW,92
+The system shall save the sensor reading within 3 seconds after logout.,LOW,81
+The system shall store the audit record within 10 seconds after account creation.,LOW,89
+The application shall save the sensor reading for at least 60 concurrent users with response time below 2 seconds.,LOW,85
+The system shall send a notification within 60 seconds after profile update.,LOW,84
+The service shall process the payment after sensor data arrival and record the result within 3 seconds.,LOW,94
+The service shall authenticate the user after successful login and record the result within 15 seconds.,LOW,82
+The API shall process the payment within 15 milliseconds for 95 percent of valid requests.,LOW,84
+The system shall display the dashboard within 10 seconds after file upload.,LOW,94
+The system shall upload the file within 15 seconds after API request.,LOW,86
+The service shall store the audit record after payment submission and record the result within 15 seconds.,LOW,89
+The application shall send a notification for at least 100 concurrent users with response time below 2 seconds.,LOW,84
+The service shall display the dashboard after successful login and record the result within 10 seconds.,LOW,85
+The system shall store the audit record within 30 seconds after a password reset request.,LOW,95
+The API shall send a notification within 15 milliseconds for 95 percent of valid requests.,LOW,89
+The service shall authenticate the user after logout and record the result within 60 seconds.,LOW,84
+The application shall save the sensor reading for at least 100 concurrent users with response time below 2 seconds.,LOW,83
+The application shall upload the file for at least 3 concurrent users with response time below 2 seconds.,LOW,88
+The system shall reject documents larger than 2 MB and display an error message.,LOW,93
+The service shall process the payment after sensor data arrival and record the result within 15 seconds.,LOW,81
+The service shall save the sensor reading after account creation and record the result within 5 seconds.,LOW,94
+The system shall reject search requests larger than 10 MB and display an error message.,LOW,89
+The system shall reject files larger than 30 MB and display an error message.,LOW,95
+The service shall return search results after successful login and record the result within 10 seconds.,LOW,82
+The system shall create the user profile within 3 seconds after account creation.,LOW,91
+The API shall save the sensor reading within 5 milliseconds for 95 percent of valid requests.,LOW,87
+The application shall save the sensor reading for at least 10 concurrent users with response time below 2 seconds.,LOW,88
+The system shall reject sensor readings larger than 3 MB and display an error message.,LOW,86
+The system shall authenticate the user within 10 seconds after logout.,LOW,82
+The system shall store the audit record within 3 seconds after successful login.,LOW,89
+The application shall return search results for at least 100 concurrent users with response time below 2 seconds.,LOW,92
+The system shall reject notifications larger than 100 MB and display an error message.,LOW,84
+The system shall process the payment within 60 seconds after profile update.,LOW,88
+The system shall process the payment within 2 seconds after sensor data arrival.,LOW,84
+The application shall store the audit record for at least 100 concurrent users with response time below 2 seconds.,LOW,85
+The API shall store the audit record within 3 milliseconds for 95 percent of valid requests.,LOW,81
+The system shall reject payments larger than 3 MB and display an error message.,LOW,88
+The API shall store the audit record within 60 milliseconds for 95 percent of valid requests.,LOW,81
+The API shall return search results within 100 milliseconds for 95 percent of valid requests.,LOW,91
+The API shall send a notification within 10 milliseconds for 95 percent of valid requests.,LOW,90
+The system shall reject files larger than 30 MB and display an error message.,LOW,88
+The system shall reject documents larger than 5 MB and display an error message.,LOW,94
+The application shall process the payment for at least 3 concurrent users with response time below 2 seconds.,LOW,95
+The system shall reject user profiles larger than 2 MB and display an error message.,LOW,91
+The system shall reject sensor readings larger than 30 MB and display an error message.,LOW,84
+The service shall upload the file after file upload and record the result within 5 seconds.,LOW,95
+The system shall display the dashboard within 100 seconds after logout.,LOW,82
+The system shall reject search requests larger than 15 MB and display an error message.,LOW,95
+The application shall reset the password for at least 15 concurrent users with response time below 2 seconds.,LOW,92
+The service shall authenticate the user after account creation and record the result within 2 seconds.,LOW,95
+The application shall return search results for registered users.,MEDIUM,67
+The service should authenticate the user and return a useful status message.,MEDIUM,71
+The portal shall return search results after payment submission.,MEDIUM,63
+The system should reset the password when file upload.,MEDIUM,71
+The portal shall save the sensor reading after payment submission.,MEDIUM,71
+The system should reset the password when sensor data arrival.,MEDIUM,67
+The service should display the dashboard and return a useful status message.,MEDIUM,68
+The application should support payments management for administrators.,MEDIUM,77
+The portal shall display the dashboard after profile update.,MEDIUM,67
+The application shall process the payment for registered users.,MEDIUM,66
+The portal shall reset the password after a password reset request.,MEDIUM,73
+The application shall upload the file for registered users.,MEDIUM,68
+The application should support user profiles management for administrators.,MEDIUM,65
+The application should support sessions management for administrators.,MEDIUM,68
+The service should upload the file and return a useful status message.,MEDIUM,67
+The system should upload the file when account creation.,MEDIUM,68
+The portal shall process the payment after logout.,MEDIUM,74
+The service should save the sensor reading and return a useful status message.,MEDIUM,74
+The service should save the sensor reading and return a useful status message.,MEDIUM,73
+The application shall authenticate the user for registered users.,MEDIUM,67
+The service should store the audit record and return a useful status message.,MEDIUM,70
+The portal shall create the user profile after account creation.,MEDIUM,73
+The system should return search results when payment submission.,MEDIUM,66
+The application shall send a notification for registered users.,MEDIUM,72
+The system should create the user profile when logout.,MEDIUM,70
+The portal shall store the audit record after successful login.,MEDIUM,66
+The application shall save the sensor reading for registered users.,MEDIUM,77
+The system should create the user profile when API request.,MEDIUM,72
+The service should create the user profile and return a useful status message.,MEDIUM,74
+The portal shall create the user profile after a password reset request.,MEDIUM,70
+The application shall return search results for registered users.,MEDIUM,67
+The service should reset the password and return a useful status message.,MEDIUM,69
+The application shall store the audit record for registered users.,MEDIUM,71
+The portal shall upload the file after a password reset request.,MEDIUM,77
+The application should support files management for administrators.,MEDIUM,67
+The portal shall upload the file after API request.,MEDIUM,69
+The portal shall display the dashboard after profile update.,MEDIUM,76
+The portal shall send a notification after sensor data arrival.,MEDIUM,73
+The system should process the payment when three failed login attempts.,MEDIUM,63
+The service should upload the file and return a useful status message.,MEDIUM,68
+The portal shall return search results after file upload.,MEDIUM,63
+The application should support user profiles management for administrators.,MEDIUM,75
+The system should store the audit record when successful login.,MEDIUM,66
+The application shall create the user profile for registered users.,MEDIUM,74
+The service should reset the password and return a useful status message.,MEDIUM,75
+The application shall return search results for registered users.,MEDIUM,72
+The portal shall upload the file after payment submission.,MEDIUM,64
+The service should authenticate the user and return a useful status message.,MEDIUM,71
+The portal shall reset the password after account creation.,MEDIUM,76
+The portal shall create the user profile after sensor data arrival.,MEDIUM,74
+The application should provide in a user-friendly way results.,HIGH,51
+The platform should handle sessions reasonably.,HIGH,44
+The application should provide as soon as possible results.,HIGH,48
+The platform should handle notifications adequately.,HIGH,41
+The website should be reasonably and easy to use.,HIGH,53
+The platform should handle sensor readings efficiently.,HIGH,42
+The website should be as soon as possible and easy to use.,HIGH,51
+The system should normally process the payment.,HIGH,43
+The platform should handle documents adequately.,HIGH,45
+The platform should handle audit logs reasonably.,HIGH,43
+The application should provide with good performance results.,HIGH,51
+The application should provide in a user-friendly way results.,HIGH,51
+The platform should handle sensor readings reasonably.,HIGH,42
+The service may send a notification when necessary.,HIGH,43
+The system should efficiently display the dashboard.,HIGH,52
+The system should as soon as possible authenticate the user.,HIGH,44
+The application should provide efficiently results.,HIGH,45
+The website should be in a user-friendly way and easy to use.,HIGH,43
+The system should in a user-friendly way store the audit record.,HIGH,48
+The platform should handle notifications reasonably.,HIGH,52
+The platform should handle sessions quickly.,HIGH,48
+The system should appropriately store the audit record.,HIGH,42
+The application should provide smoothly results.,HIGH,46
+The platform should handle sensor readings reasonably.,HIGH,50
+The service may create the user profile when necessary.,HIGH,49
+The application should provide appropriately results.,HIGH,53
+The service may send a notification when necessary.,HIGH,48
+The platform should handle notifications reasonably.,HIGH,50
+The website should be in a user-friendly way and easy to use.,HIGH,39
+The website should be normally and easy to use.,HIGH,49
+The platform should handle sessions quickly.,HIGH,51
+The application should provide in a user-friendly way results.,HIGH,45
+The website should be adequately and easy to use.,HIGH,44
+The system should reasonably send a notification.,HIGH,49
+The website should be adequately and easy to use.,HIGH,43
+The service may process the payment when necessary.,HIGH,46
+The website should be in a user-friendly way and easy to use.,HIGH,51
+The website should be with good performance and easy to use.,HIGH,41
+The service may create the user profile when necessary.,HIGH,51
+The application should provide with good performance results.,HIGH,45
+The system should appropriately store the audit record.,HIGH,46
+The service may save the sensor reading when necessary.,HIGH,42
+The website should be in a user-friendly way and easy to use.,HIGH,47
+The application should provide with good performance results.,HIGH,43
+The system should as soon as possible return search results.,HIGH,52
+The application should provide with good performance results.,HIGH,51
+The platform should handle sensor readings normally.,HIGH,48
+The website should be as soon as possible and easy to use.,HIGH,50
+The website should be appropriately and easy to use.,HIGH,47
+The platform should handle user profiles with good performance.,HIGH,53
