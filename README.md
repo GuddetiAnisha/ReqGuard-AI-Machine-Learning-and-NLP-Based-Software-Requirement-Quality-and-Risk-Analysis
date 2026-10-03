@@ -72,6 +72,89 @@ If `sentence-transformers` is installed and the model can be loaded, ReqGuard us
 ### Clustering
 K-Means groups requirements using Sentence-BERT embeddings when available, otherwise TF-IDF features. This demonstrates unsupervised machine learning.
 
+## Validation results
+
+The current implementation was validated locally on Windows with Python 3.12 using the bundled labeled demonstration dataset.
+
+### Automated tests
+
+```text
+8 passed
+```
+
+All eight automated tests passed successfully.
+
+### Held-out risk-classification benchmark
+
+The bundled 150-example dataset was split into **112 training** and **38 held-out test** requirements. Four classifiers were compared on the same split.
+
+| Model | Accuracy | Precision | Recall | F1 |
+|---|---:|---:|---:|---:|
+| Random Forest | **0.9737** | **0.9757** | **0.9737** | **0.9737** |
+| Linear SVM | 0.9211 | 0.9359 | 0.9211 | 0.9222 |
+| Logistic Regression | 0.8684 | 0.8932 | 0.8684 | 0.8649 |
+| Naive Bayes | 0.8158 | 0.8461 | 0.8158 | 0.8090 |
+
+**Random Forest** was the best-performing classifier on this held-out split.
+
+Its confusion matrix was:
+
+```text
+[[13, 0, 0],
+ [ 0,12, 1],
+ [ 0, 0,12]]
+```
+
+### Quality-regression benchmark
+
+The Random Forest quality regressor was evaluated on the same 112/38 train/test split.
+
+| Metric | Result |
+|---|---:|
+| MAE | **4.57** |
+| RMSE | **5.64** |
+| R² | **0.901** |
+
+### Manual sanity checks
+
+A measurable requirement:
+
+```text
+The API shall respond within 2 seconds.
+```
+
+was classified as **LOW risk**, with probabilities:
+
+```text
+LOW: 0.788
+MEDIUM: 0.152
+HIGH: 0.060
+```
+
+An ambiguous requirement:
+
+```text
+The system should work quickly.
+```
+
+was classified as **HIGH risk**, with probabilities:
+
+```text
+HIGH: 0.680
+MEDIUM: 0.244
+LOW: 0.076
+```
+
+The hybrid assessment for:
+
+```text
+The application should respond quickly.
+```
+
+produced a **final quality score of 57.7** and **HIGH final risk**. The rule engine detected issues including the ambiguous word `quickly`, missing context, and the absence of a measurable threshold.
+
+These validation results demonstrate that the implemented ML, rule-based, hybrid, and testing pipelines behave consistently on the bundled demonstration benchmark. They do **not** establish production-level or broad real-world performance.
+
 ## Important academic limitation
 
 The bundled `training_requirements.csv` is a **small synthetic demonstration dataset** generated for the prototype. Metrics produced from it show that the ML pipeline works, but they must not be presented as evidence of production-level or real-world performance. For a thesis or research study, replace or extend it with a larger manually labeled dataset and perform stronger validation.
@@ -130,9 +213,9 @@ R002,The website should work quickly.
 - `similarity.py` — original lightweight TF-IDF similarity utilities
 - `recommendations.py` — improvement suggestions
 - `database.py` — SQLite persistence
-- `data/training_requirements.csv` — demonstration labeled ML data
-- `data/sample_requirements.csv` — batch-analysis examples
-- `tests/` — automated tests
+- `training_requirements.csv` — demonstration labeled ML data
+- `sample_requirements.csv` — batch-analysis examples
+- `test_ml_extensions.py`, `test_quality_engine.py`, `test_similarity.py` — automated tests
 
 ## How to explain the project
 
