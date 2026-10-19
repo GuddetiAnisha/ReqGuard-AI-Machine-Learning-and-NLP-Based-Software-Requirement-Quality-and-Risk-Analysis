@@ -6,7 +6,7 @@ ReqGuard AI is an independent software engineering and artificial intelligence p
 
 Its purpose is to identify possible requirement problems **before** developers begin implementing the software. The project combines explainable rules, supervised machine learning, natural language processing (NLP), semantic similarity, and clustering. It provides results through an interactive Streamlit dashboard.
 
-This is an independent demonstration and portfolio project. **It is not an Ericsson or Volvo project, and its results should not be presented as work performed for either company.** The included training data is synthetic, not a proprietary industrial dataset.
+
 
 ## 2. Why requirement quality matters
 
